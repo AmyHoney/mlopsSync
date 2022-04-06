@@ -12,7 +12,10 @@ Please refer to https://www.tensorflow.org/text/tutorials/text_generation
 
 ### Pytorch example
 #### Build image from Docker:cpu
-kubectl cp torch_sgd_mnist.ipynb torch-sgd-mnist-0:quickstart_tutorial.ipynb -n kubeflow-user-example-com
+docker build -t harbor-repo.vmware.com/zyajing/torch-cpujupyter-160:v1.0 .
+
+#### sgd model
+kubectl cp torch_sgd_mnist.ipynb torch-sgd-mnist-0:torch_sgd_mnist.ipynb -n kubeflow-user-example-com
 
 Please refer to https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
 
