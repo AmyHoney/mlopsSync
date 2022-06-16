@@ -45,8 +45,8 @@ spec:
       defaultClass: pacific-storage-policy
     network:
       proxy:
-        httpProxy: http://proxy.liuqi.io:3128  #Proxy URL for HTTP connections
-        httpsProxy: http://proxy.liuqi.io:3128 #Proxy URL for HTTPS connections
+        httpProxy: http://proxy.liuqi.me:3128  #Proxy URL for HTTP connections
+        httpsProxy: http://proxy.liuqi.me:3128 #Proxy URL for HTTPS connections
         noProxy: [10.244.0.0/20,10.117.233.0/26,10.117.233.64/26,192.168.0.0/16,10.0.0.0/8,127.0.0.1,localhost,.svc,.svc.cluster.local] #SVC Pod, Egress, Ingress CIDRs   
 EOF
 
